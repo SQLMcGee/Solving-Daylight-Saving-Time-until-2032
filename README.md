@@ -16,7 +16,7 @@ Format:
 The SQL query is a case function using standard “when/then” format and between operators to isolate 
 time ranges for Standard Time and DST. In obtaining the parameters for the between operators 
 historical (and future) dates for DST were documented from timeanddate.com^1 and lathem.com^2. The 
-starting value was midnight, Jan 1 2001(UTC-0), and the ending value was 1:46:39 AM, Sep 9 2032(UTC0). 
+starting value was midnight, Jan 1 2001(UTC-0), and the ending value was 1:46:39 AM, Sep 9 2032(UTC+0). 
 The initial aim was to formulate queries for time conversion from midnight, Jan 1 2001 until 
 midnight Jan 1, 2050; however, Apple Absolute Double Timestamps terminate at 1:46:39 AM, Sep 9 
 2032(UTC-0), with a value of “999999999”. It is likely that around Jan 1 2030 or 2031 the timestamp will 
@@ -75,6 +75,6 @@ References:
 February 14, 2022, from https://www.timeanddate.com/time/change/usa/new-york?year=2021
 
 2. Daylight Saving Time Starting And Ending Dates. (n.d.). Lathem. Retrieved February 14, 2022, 
-from https://kb.lathem.com/hc/en-us/articles/115005029348-Daylight-Saving-Time-StartingAnd-Ending-Dates
+from https://kb.lathem.com/hc/en-us/articles/115005029348-Daylight-Saving-Time-Starting-And-Ending-Dates
 
 Author: James R. McGee, Digital Forensic Examiner
